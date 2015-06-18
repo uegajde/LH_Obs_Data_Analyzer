@@ -1,0 +1,55 @@
+body {
+    width:70%;
+    margin-left: 10%;
+    background-color: #9EBB4D;
+}
+
+h1,h2,h3 {
+    color: #2B3A00;
+}
+
+#fast_shift {
+    position: fixed;
+    right: 1%;
+    top: 0%;
+    width: 220px;
+    color: #F3FBDC;
+    padding: 10px 15px;
+    background-color: #668218;
+    font-size:14px;
+}
+
+#fs_pi,#fs_odi,#fs_sdi,#fs_se,#fs_qa,#fs_sea,#fs_d1,#fs_d2,#fs_d3,#fs_d4,#fs_d5 {
+    color: #DBF29D;
+    cursor: pointer;
+    margin-top:5px;
+}
+
+table,td,tr{
+    border: 2px solid #668218;
+    border-collapse: collapse;
+    background-color: #DBF29D;
+    text-align:center;
+}
+
+#left_side {
+    width: 30%;
+    float: left;
+}
+#right_side {
+    margin-left:30%;
+    width: 70%;
+}
+#even_left {
+    float: left;
+    width: 49%;
+}
+#even_right {
+    margin-left:50%;
+    width: 49%;
+}
+
+img {
+    max-width:fill-available;
+    width: 100%;
+}
