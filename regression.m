@@ -1,5 +1,8 @@
 %obs & true are column vector
 function report=regression(obs,true,n,plotswitch)
+%
+% main programmer : Hsieh, C. Y.
+%
 %分析前統計值計算
 report.before.corr=corrcoef(obs,true);%相關係數
 report.before.corr=report.before.corr(1,2);%相關係數
@@ -38,11 +41,13 @@ report.after.meanabserr=mean(abs(newobs-true));%誤差絕對值之平均
 %plot
 if (plotswitch == 1)
 	newplot = figure('visible','off');
+    figure(newplot);
+    set(newplot,'visible','off');
     
 	x=obs; y=x;
 	plot(x,y,'r','LineWidth',2);
     hold on;
-	plot(xx,ideaobs,'g','LineWidth',1.5);
+	plot(xx,ideaobs,'g','LineWidth',2);
 	plot(obs,true,'b.')
 	title('Before');xlabel('Obs');ylabel('Standard');
 	print(['-f',num2str(newplot)],'-djpeg',['.\report\plot\obs_true_d',num2str(n),'_before.jpeg'])

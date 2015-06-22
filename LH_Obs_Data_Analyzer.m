@@ -1,8 +1,11 @@
 % L&H's Obs Data Analyzer
+%
+% main programmer : Lin Zhe-Hui
+%
 
 % initialize
 clear;
-version = '1.0 Beta2';
+version = '1.0';
 
 % custom color
 myblue =   [0.6 0.8 1.0];
@@ -94,12 +97,11 @@ handles.info = uicontrol('style','text','position',[15,15,375,85],'max',5,...
                                 ['Version : ',version];
                                 'Author : Lin Zhe-Hui & Hsieh, C. Y.';
                                 'this project is released under GPLv3'});
-%                                 'Copyright 2015, We All Rights Reserved'});
 
 % panel : preview
 handles.ppreview = uipanel('Units','pixels','Title','Preview',...
                         'Position',[405,290,390,310],'BackgroundColor',gray,'fontsize',12);
-handles.preview = axes('Units','pixels','Position',[450,330,330,240]);
+handles.preview = axes('Units','pixels','Position',[455,330,325,240]);
 
 % panel : log
 handles.plog = uipanel('Units','pixels','Title','Log',...

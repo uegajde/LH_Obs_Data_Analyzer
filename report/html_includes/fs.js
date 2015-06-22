@@ -1,6 +1,9 @@
-
             $(function ()
             {
+                $("#mt").click(function(){
+                  $("#fss").toggle();
+                });
+                
                 $("#fs_pi").click(function ()
                 {
                     focus_seat = $('#pi').position().top;
@@ -29,6 +32,11 @@
                 $("#fs_sea").click(function ()
                 {
                     focus_seat = $('#sea').position().top;
+                    jQuery("html,body").animate({ scrollTop: focus_seat }, 200);
+                });
+                $("#fs_su").click(function ()
+                {
+                    focus_seat = $('#su').position().top;
                     jQuery("html,body").animate({ scrollTop: focus_seat }, 200);
                 });
                 $("#fs_d1").click(function ()

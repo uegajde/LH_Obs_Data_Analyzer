@@ -1,4 +1,7 @@
 function prereport=pre_report_model(standard,obs,analysis,settings,info)
+%
+% main programmer : Lin Zhe-Hui
+%
 
 % < input variable structure >               < output variable structure >
 % info-------------------------------------> prereport.program_info
@@ -171,6 +174,8 @@ function prereport=pre_report_model(standard,obs,analysis,settings,info)
     
     if (settings.output.plot == 1)
         newplot = figure('visible','off');
+        figure(newplot);
+        set(newplot,'visible','off');
         
         plot(standard.data);
         title('standard data');

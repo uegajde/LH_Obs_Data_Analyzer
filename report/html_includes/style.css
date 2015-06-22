@@ -1,7 +1,9 @@
 body {
-    width:70%;
+    width:80%;
     margin-left: 10%;
     background-color: #9EBB4D;
+    font-size: 20px;
+    font-family:Calibri;
 }
 
 h1,h2,h3 {
@@ -12,17 +14,37 @@ h1,h2,h3 {
     position: fixed;
     right: 1%;
     top: 0%;
-    width: 220px;
+    width: 230px;
     color: #F3FBDC;
     padding: 10px 15px;
     background-color: #668218;
-    font-size:14px;
+    font-size:15px;
+    opacity: 0.9;
 }
 
-#fs_pi,#fs_odi,#fs_sdi,#fs_se,#fs_qa,#fs_sea,#fs_d1,#fs_d2,#fs_d3,#fs_d4,#fs_d5 {
+#fs_pi,#fs_odi,#fs_sdi,#fs_se,#fs_qa,#fs_sea,#fs_su,#fs_d1,#fs_d2,#fs_d3,#fs_d4,#fs_d5 {
     color: #DBF29D;
     cursor: pointer;
-    margin-top:5px;
+    margin-bottom : 3px;
+    margin-top : 3px;
+}
+
+#fs_pi:hover,#fs_odi:hover,#fs_sdi:hover,
+#fs_se:hover,#fs_qa:hover,#fs_sea:hover,#fs_su:hover,
+#fs_d1:hover,#fs_d2:hover,#fs_d3:hover,#fs_d4:hover,#fs_d5:hover{
+    color: #F3FBDC;
+    font-size:16px;
+}
+
+#mt {
+    color: #F3FBDC;
+    cursor: pointer;
+    margin-bottom : 3px;
+    margin-top : 3px;
+}
+
+#mt:hover {
+    color: #F3FBDC;
 }
 
 table,td,tr{
@@ -32,21 +54,24 @@ table,td,tr{
     text-align:center;
 }
 
+#summary {
+}
+
 #left_side {
-    width: 30%;
+    width: 40%;
     float: left;
 }
 #right_side {
-    margin-left:30%;
-    width: 70%;
+    margin-left:40%;
+    width: 59%;
 }
 #even_left {
     float: left;
-    width: 49%;
+    width: 49.5%;
 }
 #even_right {
-    margin-left:50%;
-    width: 49%;
+    margin-left:50.5%;
+    width: 49.5%;
 }
 
 img {

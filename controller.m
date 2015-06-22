@@ -1,4 +1,7 @@
 function handles=controller(trigger,handles)
+%
+% main programmer : Lin Zhe-Hui
+%
 %------------------------------------------------------------------------------
 % odselect & sdselect
 %------------------------------------------------------------------------------
@@ -127,7 +130,7 @@ function handles=controller(trigger,handles)
         handles.prereport = prereport;
         easy_report = easy_report_model(prereport,settings);
         if (settings.output.html == 1)
-            html_report_model(prereport,settings);
+            html_report_model(prereport,analysis,settings);
         end
         set(handles.log,'String',easy_report);
         disp('done');
